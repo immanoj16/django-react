@@ -47,3 +47,4 @@ RUN pip install -r requirements.txt
 RUN mkdir -p new-app
 COPY --from=copy-src /usr/src/app/ ./new-app/
 ENTRYPOINT ["./entrypoint.sh"]
+# CMD tail -f /dev/null
